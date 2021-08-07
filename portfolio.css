@@ -1,0 +1,353 @@
+/*                  ---------------------- Global ----------------------------         */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url(./25332.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*                  --------------------------------Navigation Section -------------------------   */
+
+nav{
+    background-color:rgba(231, 229, 229, 0.986);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    z-index: 1;
+
+}
+nav h4{
+    color: rgb(12, 12, 12);
+    font-size: 6rem;
+    font-family: 'Waiting for the Sunrise', cursive;
+    letter-spacing: 10px;
+    align-self: flex-end;
+    margin-bottom: -3%;
+    margin-top: -1% ;
+}
+nav ul{
+    width: 15%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    border: solid 1px black;
+    padding: 3%;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 15px;
+    
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+nav ul li:hover {
+    background-color:rgb(139, 184, 221) ;
+    
+
+}
+
+.smaller{
+    display: none;
+}
+
+
+/*                      ----------------------------Header Section ---------------------------------------              */
+
+.header{
+    display: flex;
+    background-color: rgba(231, 229, 229, 0.986);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    height: 70vh;
+    overflow-y: hidden;
+}
+
+.header .bird{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+   height: 50%;
+   margin-top: -2%;
+   padding-left: 5%;
+}
+
+.header .bird .bird-box{
+    height: 100px;
+    width: 70px;
+    animation-name: flying;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+#bird-box-top{
+    animation-duration: 0.7s;
+}
+
+#bird-box-mid{
+    align-self: center;
+    animation-duration: 0.8s;
+}
+
+/*                      --------------------------- About Me Section -----------------------------------                */
+
+.about{
+    display: flex;
+    margin-top: 10vh;
+    height: 70vh;
+    background-color: rgb(113, 154, 187);
+    justify-content: space-around ;
+    align-items: center;
+}
+
+.about h1{
+    padding-top: 1% ;
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+    letter-spacing: 2px;
+    text-decoration: underline solid white 2px;
+    text-underline-offset: 10px;
+    width: 25%;
+}
+.about p {
+    
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    width: 40vw;
+    height: 90%;
+    overflow-y: auto;
+}
+
+/*                      --------------------------- Projects Section ------------------------------------               */
+
+.projects{
+    display: flex;
+    margin-top: 10vh;
+    height: 70vh;
+    background-color: rgb(121, 182, 80);
+    justify-content: space-around ;
+    align-items: center;
+}
+
+.projects h1{
+    padding-top: 1% ;
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+    letter-spacing: 2px;
+    text-decoration: underline solid white 2px;
+    text-underline-offset: 10px;
+    width: 25%;
+}
+.projects p {
+    
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    width: 40vw;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.projects-li:hover{
+    background-color:rgb(121, 182, 80) ;
+}
+
+#honey-img{
+    height: 10vw;
+    width: 15vw;
+}
+
+.projects .project{
+    padding: 0%;
+    position: relative;
+    text-align: center;
+    overflow-y: auto;
+    width: 20%;
+}
+.project .honey a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.project .honey a:hover{
+    font-size: 1.5em;
+    color: black;
+}
+
+
+/*                      ---------------------------- Skills         -------------------------------------               */
+
+
+.skills{
+    display: flex;
+    margin-top: 10vh;
+    height: 70vh;
+    background-color: rgb(230, 106, 106);
+    justify-content: space-around ;
+    align-items: center;
+}
+
+.skills h1{
+    padding-top: 1% ;
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+    letter-spacing: 2px;
+    text-decoration: underline solid white 2px;
+    text-underline-offset: 10px;
+    width: 25%;
+}
+
+
+.skills-li:hover{
+    background-color:rgb(253, 84, 84) ;
+}
+
+
+.skills .skill{
+   
+    padding: 2%;
+    position: relative;
+    text-align: center;
+    overflow-y: auto;
+    width: 50%;
+}
+.skills .skill i{
+    padding: 5%;
+    font-size: 3em;
+}
+
+/*                      --------------------------- Contact Section -------------------------------------               */
+
+.contact{
+    display: grid;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    height: 20vh;
+    background-color: rgb(208, 139, 211);  
+     
+}
+.contact h1{
+    padding-top: 5% ;
+    padding-bottom: 1%;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    text-decoration: underline solid white 2px;
+    text-underline-offset: 10px;
+    width: 30vw;
+}
+
+.contact i{
+   
+    padding: 10px;
+    
+}
+.contact .contact-me a{
+    text-decoration: none;
+    color: white;
+}
+.contact .contact-me a:hover{
+    color: darkslategrey;
+}
+.contact .contact-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-li:hover{
+    background-color: rgb(208, 139, 211);
+}
+
+/*                      --------------------------- Animations      -------------------------------------               */
+
+@keyframes flying {
+    0%  {background-image:url(./birdn2.png);}
+    25% {background-image: url(./birdn2.png);}
+    50% {background-image: url(./birdn3.png);}
+    75% {background-image: url(./birdn4.png);}
+    100% {background-image: url(./birdn3.png);}
+   
+}
+
+
+
+/*                      --------------------------- Responsiveness ---------------------------------------              */
+@media screen and (max-width:800px){
+    .bigger{
+        display: none;
+        
+    }
+
+    .smaller{
+        display: inline-block;
+    }
+   
+    nav ul li{
+        margin: 5%;
+    }
+     nav{
+    
+        justify-content: space-evenly;
+    }
+    .skills .skill i{
+        padding: 5%;
+        font-size: 2em;
+    }
+   
+}
+
+@media screen and (max-width:600px){
+    nav{
+        text-align: center;
+        display: grid;
+        justify-content: space-around;
+    }
+    nav ul {
+        width: 100vw;
+       
+    }
+    nav ul li{
+        padding: 0.5%;
+        margin: 5%;
+    }
+    .about h1{
+        text-decoration: none;
+    }
+    .projects h1{
+        text-decoration: none;
+    }
+    .skills h1{
+        text-decoration: none;
+    }
+    .skills .skill i{
+        padding: 5%;
+        font-size: 1em;
+    }
+}
